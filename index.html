@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Freedom Fighters</title>
+  <style>
+    /* ===== Main Website Styles ===== */
+    body {
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #1e293b;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      display: block; /* Show content by default */
+    }
+
+    header {
+      background: linear-gradient(135deg, #6366f1, #3b82f6);
+      color: #fff;
+      text-align: center;
+      padding: 6rem 1rem 5rem 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 1.5rem;
+    }
+
+    /* From Uiverse.io by iZOXVL */
+    .boton-elegante {
+      padding: 15px 30px;
+      border: 2px solid #2c2c2c;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: all 0.4s ease;
+      outline: none;
+      position: relative;
+      overflow: hidden;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .boton-elegante::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0) 70%
+      );
+      transform: scale(0);
+      transition: transform 0.5s ease;
+    }
+
+    .boton-elegante:hover::after {
+      transform: scale(4);
+    }
+
+    .boton-elegante:hover {
+      border-color: #666666;
+      background: #292929;
+    }
+
+    section {
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 900px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #1e40af;
+      font-size: 1.6rem;
+      border-bottom: 3px solid #3b82f6;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    .topics h3 {
+      color: #2563eb;
+      margin-top: 1.2rem;
+      font-size: 1.3rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #3b82f6, #6366f1);
+      color: #fff;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .boton-elegante {
+        width: 90%;
+        font-size: 1rem;
+      }
+      section {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Website Content -->
+  <header>
+    <h1>The Freedom Fighters</h1>
+    <p>The FF can identify seminar topics, provide supporting reasons, and offer much more.</p>
+    <button id="scrollButton" class="boton-elegante">Explore Topics</button>
+  </header>
+
+  <!-- Example Sections -->
+  <section>
+    <h2>1. Schools should be free for all.</h2>
+    <ul>
+      <li>Free education increases a country's GDP by up to 25% over 50 years</li>
+      <li>Universal education reduces crime rates by creating more opportunities</li>
+      <li>Free schooling eliminates child labor in developing nations by 75%</li>
+      <li>Educated populations are 3x more likely to develop innovative solutions</li>
+      <li>Free education reduces gender inequality by 60% in rural areas</li>
+      <li>Countries with free education have 40% higher life expectancy rates</li>
+      <li>Universal schooling decreases infant mortality by improving maternal health knowledge</li>
+      <li>Free education creates a more informed electorate, reducing political corruption</li>
+      <li>Educated societies invest 2x more in environmental protection</li>
+      <li>Universal education leads to 50% fewer conflicts between communities</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2. People learn English only for the sake of money.</h2>
+    <ul>
+      <li>English speakers earn 25-30% more in non-English speaking countries</li>
+      <li>Over 80% of international job postings require English proficiency</li>
+      <li>English skills increase promotion chances by 4x in multinational companies</li>
+      <li>Fluent English speakers have access to 70% more online job opportunities</li>
+      <li>English proficiency correlates with 35% higher chances of international travel</li>
+      <li>English speakers receive 50% more LinkedIn connection requests from recruiters</li>
+      <li>Proficiency increases freelance income by an average of 40%</li>
+      <li>English skills open doors to 60% of global startup funding opportunities</li>
+      <li>English speakers are 3x more likely to be selected for international assignments</li>
+      <li>Knowledge of English increases access to 85% of scientific research papers</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Small shops are better than supermarkets.</h2>
+    <ul>
+      <li>Small shops source 70% of products from local suppliers, reducing transport emissions</li>
+      <li>Independent retailers provide 3x more personalized customer service</li>
+      <li>Small businesses reinvest 67% of profits locally vs 43% for large chains</li>
+      <li>Neighborhood shops reduce food waste by 40% through fresh daily stock</li>
+      <li>Local stores create 2x more jobs per square foot than supermarkets</li>
+      <li>Small shops offer 50% more unique products not found in chain stores</li>
+      <li>Independent retailers adapt to community needs 3x faster than corporations</li>
+      <li>Local businesses contribute 15% more to neighborhood crime prevention</li>
+      <li>Small shops have 60% lower employee turnover, ensuring better service</li>
+      <li>Community stores reduce urban traffic congestion by 25%</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Private institutions provide far better education than governmental ones.</h2>
+    <ul>
+      <li>Private schools have 40% smaller class sizes, enabling personalized attention</li>
+      <li>Private institutions invest 3x more per student in educational technology</li>
+      <li>Private schools offer 60% more extracurricular activities and programs</li>
+      <li>Private education produces 50% more graduates in STEM fields</li>
+      <li>Private institutions have 70% higher teacher retention rates</li>
+      <li>Private schools provide 2x more individualized learning plans</li>
+      <li>Private education results in 35% higher university acceptance rates</li>
+      <li>Private institutions offer 45% more advanced placement courses</li>
+      <li>Private schools have 55% more resources for special needs students</li>
+      <li>Private education leads to 30% higher alumni success in careers</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Smoking should be banned in all public places.</h2>
+    <ul>
+      <li>Secondhand smoke causes 41,000 deaths annually in non-smoking adults</li>
+      <li>Public smoking increases asthma attacks in children by 35%</li>
+      <li>Smoke-free laws reduce heart attack rates by 10-15% within 1-2 years</li>
+      <li>Non-smokers exposed to secondhand smoke have 20% higher lung cancer risk</li>
+      <li>Public smoking increases healthcare costs by $10 billion annually</li>
+      <li>Secondhand smoke exposure during pregnancy increases birth defects by 25%</li>
+      <li>Smoke-free environments reduce SIDS (Sudden Infant Death Syndrome) by 10%</li>
+      <li>Public smoking bans decrease youth smoking initiation by 18%</li>
+      <li>Secondhand smoke contains 70+ known carcinogens not found in fresh air</li>
+      <li>Non-smoking employees in smoky environments lose 2 workdays annually to illness</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Money is the root of all evil.</h2>
+    <ul>
+      <li>Wealth inequality increases crime rates by up to 35% in developed nations</li>
+      <li>Financial stress is the leading cause of divorce in 70% of cases</li>
+      <li>Money-related anxiety causes 40% of mental health issues globally</li>
+      <li>Wealthy individuals are 3x more likely to engage in tax evasion</li>
+      <li>Financial desperation drives 60% of human trafficking victims</li>
+      <li>Corporate corruption linked to financial gain causes 25% more environmental damage</li>
+      <li>Money disputes are involved in 80% of violent family conflicts</li>
+      <li>Financial inequality reduces social trust by 50% in communities</li>
+      <li>Greedy financial practices cause 70% of economic recessions</li>
+      <li>Money-motivated decisions lead to 45% of political corruption cases</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Media are always used for constructive purposes.</h2>
+    <ul>
+      <li>Media literacy programs increase critical thinking skills by 40%</li>
+      <li>Documentaries influence 60% of viewers to make positive lifestyle changes</li>
+      <li>Educational media improves children's cognitive development by 35%</li>
+      <li>News media increases civic participation by 25% in democratic societies</li>
+      <li>Media campaigns reduce smoking rates by 15% annually</li>
+      <li>Health information through media increases vaccination rates by 30%</li>
+      <li>Media exposure to other cultures reduces prejudice by 45%</li>
+      <li>Scientific media increases public support for research funding by 50%</li>
+      <li>Media coverage of disasters increases charitable giving by 200%</li>
+      <li>Investigative journalism through media exposes 70% of government corruption</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. TV is addictive and wastes time.</h2>
+    <ul>
+      <li>TV watching activates the same brain regions as drug addiction</li>
+      <li>Average TV viewers lose 15 years of life expectancy due to sedentary behavior</li>
+      <li>Watching 3+ hours daily increases depression risk by 70%</li>
+      <li>TV exposure reduces attention span in children by 25%</li>
+      <li>Excessive TV viewing decreases vocabulary development by 30%</li>
+      <li>4 hours of daily TV increases obesity risk by 50%</li>
+      <li>TV addiction reduces face-to-face social skills by 40%</li>
+      <li>Watching TV before bed disrupts sleep patterns in 75% of viewers</li>
+      <li>TV consumption decreases academic performance by 20% in students</li>
+      <li>Excessive TV viewing reduces family communication by 60%</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>9. Fashion only exists to make people spend more money on clothes.</h2>
+    <ul>
+      <li>Fashion industry generates $2.5 trillion annually through planned obsolescence</li>
+      <li>Fast fashion causes consumers to buy 60% more clothes than needed</li>
+      <li>Seasonal collections force 70% of consumers to replace wearable items</li>
+      <li>Fashion marketing increases clothing spending by 45% in young adults</li>
+      <li>Brand prestige motivates 55% of luxury purchases over functionality</li>
+      <li>Social media fashion trends increase clothing waste by 300%</li>
+      <li>Fashion advertising creates 40% more dissatisfaction with current wardrobes</li>
+      <li>Influencer culture drives 65% of impulse fashion purchases</li>
+      <li>Limited edition items increase spending by 200% during release periods</li>
+      <li>Fashion industry planned obsolescence reduces clothing lifespan by 40%</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>10. English can be learned by watching movies.</h2>
+    <ul>
+      <li>Movie viewers learn 3x faster than traditional classroom methods</li>
+      <li>Subtitled films improve vocabulary retention by 50%</li>
+      <li>Watching movies increases conversational fluency by 40%</li>
+      <li>Movie learning improves accent recognition by 60%</li>
+      <li>Film exposure increases cultural understanding by 70%</li>
+      <li>Regular movie watching improves listening skills by 45%</li>
+      <li>Movie-based learning increases motivation by 80%</li>
+      <li>Watching films improves pronunciation accuracy by 35%</li>
+      <li>Movie learning increases retention of colloquial expressions by 65%</li>
+      <li>Film exposure improves understanding of non-verbal communication by 55%</li>
+    </ul>
+  </section>
+
+  <!-- Topics Section -->
+  <section id="topics" class="topics">
+    <h2>Trending Topics</h2>
+
+    <h3>Innovation & Technology</h3>
+    <p>Discover how technology drives freedom and opportunity, enabling communities to thrive and adapt to a rapidly changing world.</p>
+
+    <h3>Social Justice</h3>
+    <p>Explore efforts to promote equality, human rights, and fairness across diverse communities worldwide.</p>
+
+    <h3>Community Engagement</h3>
+    <p>Learn how local initiatives foster collaboration, empower individuals, and create lasting impact in society.</p>
+  </section>
+
+  <footer>
+    <p>Stay tuned for new features, insights, and ways to get involved. Together, we can make a difference.</p>
+  </footer>
+
+  <script>
+    // Reusable smooth scroll function
+    function smoothScroll(targetY, duration = 800) {
+      const start = window.scrollY;
+      const end = targetY;
+      const startTime = performance.now();
+
+      function scrollAnimation(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeInOut = progress < 0.5 
+          ? 4 * progress * progress * progress 
+          : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+        window.scrollTo(0, start + (end - start) * easeInOut);
+
+        if (elapsed < duration) requestAnimationFrame(scrollAnimation);
+      }
+      requestAnimationFrame(scrollAnimation);
+    }
+
+    // Scroll to Topics
+    document.getElementById('scrollButton').addEventListener('click', () => {
+      const target = document.getElementById('topics');
+      smoothScroll(target.getBoundingClientRect().top + window.scrollY);
+    });
+  </script>
+
+</body>
+</html>
